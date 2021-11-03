@@ -1,0 +1,23 @@
+.Net has two categories of types.
+
+A struct is of value type, and classes are of reference type
+
+Structs live in the stack or inline in containing types and are deallocated when the stack unwinds or when their containing type gets deallocated unlike classes which are garbage-collected.
+Allocation and deallocations are cheaper in structs than in classes.
+They can't have default constructors with no parameters.
+Copying the values from a struct into another variable will result in other instance of that value. Meaning that if I have an struct and make a copy of its values, the copy will result in another place in memory, changes in one won't affect the other.
+Unlike classes, it is not possible to inherit from a struct and a struct can't be derived from any class. 
+It's not necessary to use the new keyword in order to instantiate a struct.
+
+We must not use structures when the type has not all of the following characteristics
+-It logically represents a single value, like int, double, float, etc.
+-It has an instance size less than 16 bytes
+-Its inmutable
+-It will not have to be boxed frequently
+Otherwise classes should be used.
+
+Struct examples are:
+Primitive value types like int, float, double, bool, char, etc
+DateTime is also a struct consisting on primitive types such as HashCode, Guid, Index, etc
+
+Usefull for cases when you want to save small data that consists of groups of primitive types like for example coordinates.

@@ -1,0 +1,8 @@
+﻿a)
+Properties are members of a class that can be used to encapsulate the properties of the class.
+They can be used to define accesors for the attributes, such as get or set. Theese accessor can be implicit or explicit having custom logic inside or just returning and setting the attribute.
+Explicit accesors allow us to define some custom logic, such as validations, method calls or event raise when writing or reading is being performed in the property.
+
+b)
+Using the "this" keyword followed with () and the return type of the same type of our class we can define Indexers for classes. These are methods like constructors that can receive any type of parameter and have custom logic that returns an instance of the class.
+An example of indexer for a class is attached in the file "Ejercicio.cs" in this same folder.

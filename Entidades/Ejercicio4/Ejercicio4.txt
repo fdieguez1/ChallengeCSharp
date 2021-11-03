@@ -1,0 +1,10 @@
+Events rely on delegates in c#, which are a type that provides us with the ability to append methods to an instance of the delegate in order to call them when invoked.
+
+Using the event keyword we can declare an event in order to make an encapsulated delegate. That provides us with more control when adding or removing subscribers methods to the delegate
+
+Events are used in order to communicate to all the subscribed components in the system that something happened. 
+The class that contains the event is the one responsible of invoking it.
+
+Events should not be raised when no listeners are subscribed to the event.
+Components subscribed to an event must always unsubscribe when they're no longer interested in those events.
+

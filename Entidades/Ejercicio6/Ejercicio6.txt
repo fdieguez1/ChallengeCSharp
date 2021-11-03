@@ -1,0 +1,20 @@
+﻿a) 
+A collection generated using LINQ differs in a collection generated normally on its execution, LINQ to objects (Used for querying local in-memory collections) methods are executed in a deferred way, meaning that the code is executed when we retrieve the result, or iterate through the query. This happen for methods of LINQ that return objects of type IEnumerable<T>, this does not happen with methods that return a scalar value since the last ones are simpler and executed immediately when the query is defined.
+
+b) 
+ 1- Where
+ 2- Select 
+ 3- Order by - Then by
+ 4- FirstOrDefault
+ 5- SingleOrDefault
+ 6- Distinct
+ 7- Any
+ 8- ToList
+ 9- ToArray
+ 10-AsQueryable
+ 11-Agregate
+ 12-Take
+ 13-Skip
+ 14-Average -Min -Max
+ 15-Count
+ 

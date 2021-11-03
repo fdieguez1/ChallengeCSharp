@@ -1,0 +1,23 @@
+Inheritance is one of the pillars of object oriented programming and it's referred to the ability of a derived class to borrow the attributes, properties and methods (with exception of the constructor methods) from another class that's gonna act as a parent class (only one allowed, but it can be concatenated).
+
+Modifiers:
+
+public: Access is available and it is not restricted to members marked as public.
+
+abstract: Members marked as abstract means that it can not be instantiated, it consists on signatures for the attributes, properties or methods and no body is required, but the first non-abstract class that inherits from this class should declare an attribute, property or method with the same signature and implement a body using the override keyword. 
+Static and sealed classes or members cannot use this modifier
+
+virtual: Marking as virtual something in the parent class, provides the ability to override that in the child class by just putting the "override" keyword. It works for classes, attributes, properties or methods. A body is required
+and overriding is optional for derived classes. 
+Static classes or members cannot use this modifier
+
+override: If a class has inherited a virtual or abstract class, attribute or property from his parent, it can be overridden by adding the override keyword and making its own body ignoring the one inherited. 
+Static classes or members cannot use this modifier
+
+new: this keyword can be used before the return type and name of a method in order to break the inheritance of a parent's method that has not been declared as abstract or virtual.
+
+sealed: No class can inherit from a sealed one, it's used in order to prevent members from being inherited to another class.
+
+protected: Only derived child classes can see and use protected classes, attributes, properties or methods from his parent class.
+
+base: It's used in order to call a member of the parent class in the derived class.
