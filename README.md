@@ -1,5 +1,3 @@
-# TestPixowl
-
 ## Descripcion:
 El test consiste de dos proyectos, una libreria de clases con el codigo necesario correspondiente a los distintos ejercicios y un proyecto de MSTest con test unitarios para probar la libreria.
 
